@@ -1,0 +1,14 @@
+  return (
+    <div className="home">
+      <div className="productContainer">
+        <ListGroup>
+          {cart.map((prod) => {
+            <span>{prod.name}</span>;
+          })}
+        </ListGroup>
+      </div>
+      <div className="filters summary">
+        <span className="title">Subtotal ({cart.length}) items</span>
+      </div>
+    </div>
+  );
